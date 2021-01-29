@@ -11,7 +11,10 @@ function handleGetTypes(req, res) {
     res.json(validTypes);
 }
 
+app.get('/types', handleGetTypes);
+
 const PORT = 8000;
+
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}`);
 });
